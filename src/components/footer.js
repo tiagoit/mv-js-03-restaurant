@@ -1,4 +1,4 @@
-export const footer = () => {
+const footer = () => {
   const el = document.createElement('footer');
   el.class = 'text-muted';
   el.innerHTML = `
@@ -9,3 +9,5 @@ export const footer = () => {
   `;
   return el;
 };
+
+export default footer;

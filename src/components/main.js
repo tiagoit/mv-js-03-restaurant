@@ -1,6 +1,6 @@
 import Banner from '../assets/mexican-food.jpg';
 
-export const main = () => {
+const main = () => {
   const el = document.createElement('main');
   el.role = 'main';
   el.innerHTML = `
@@ -19,3 +19,5 @@ export const main = () => {
   `;
   return el;
 };
+
+export default main;

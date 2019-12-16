@@ -21,4 +21,3 @@ const app = () => {
 };
 
 app();
-export { tabSelector };

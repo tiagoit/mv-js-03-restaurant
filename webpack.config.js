@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
@@ -17,7 +18,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Mexican Restaurant',
       template: './src/index.html',
     }),
   ],
@@ -33,9 +34,9 @@ module.exports = {
           {
             loader: 'postcss-loader', // Run postcss actions
             options: {
-              plugins: function() {
+              plugins() {
                 // postcss plugins, can be exported to postcss.config.js
-                return [require('autoprefixer')];
+                return [autoprefixer()];
               },
             },
           },

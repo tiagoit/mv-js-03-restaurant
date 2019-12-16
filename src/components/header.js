@@ -1,4 +1,4 @@
-export const header = () => {
+const header = () => {
   const el = document.createElement('header');
   el.innerHTML = `
     <div class="collapse bg-dark" id="navbarHeader">
@@ -32,3 +32,5 @@ export const header = () => {
   `;
   return el;
 };
+
+export default header;
