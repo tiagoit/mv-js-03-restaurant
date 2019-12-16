@@ -27,7 +27,20 @@ module.exports = {
       // SASS
       {
         test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader', // Run postcss actions
+            options: {
+              plugins: function() {
+                // postcss plugins, can be exported to postcss.config.js
+                return [require('autoprefixer')];
+              },
+            },
+          },
+          'sass-loader',
+        ],
       },
       // BABEL
       {
