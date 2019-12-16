@@ -43,3 +43,18 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
+
+.jumbotron > .container {
+  & > img {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  & > p {
+    text-align: justify;
+  }
+}
+
+.card > img.card-img-top {
+  height: 280px;
+}
