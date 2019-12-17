@@ -4,7 +4,6 @@ import * as c from './components/c';
 
 // Change the current route
 const router = (route) => {
-  console.log('route: ', route);
   document.querySelector('router-outlet').innerHTML = '';
   document.querySelector('router-outlet').appendChild(c[route]());
 };

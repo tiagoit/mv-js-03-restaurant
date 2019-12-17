@@ -4,4 +4,6 @@ import home from './home';
 import menu from './menu';
 import contact from './contact';
 
-export { header, footer, home, menu, contact };
+export {
+  header, footer, home, menu, contact,
+};
