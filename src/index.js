@@ -2,21 +2,22 @@ import 'bootstrap';
 import './scss/style.scss';
 import * as c from './components/c';
 
-// Change the current tab
-const tabSelector = (tabId) => {
-  const componentName = tabId.replace('-tab', '');
-  document.getElementById('active-tab').innerHTML = c[componentName]();
+// Change the current route
+const router = (route) => {
+  console.log('route: ', route);
+  document.querySelector('router-outlet').innerHTML = '';
+  document.querySelector('router-outlet').appendChild(c[route]());
 };
 
 const app = () => {
-  // Include body partials
   document.body.appendChild(c.header());
-  document.body.appendChild(c.main());
+  document.body.appendChild(document.createElement('router-outlet'));
   document.body.appendChild(c.footer());
+  router('home');
 
   // Add event listener to all items on the tabs nav
   document.querySelectorAll('.tab-link').forEach((el) => {
-    el.addEventListener('click', (ev) => tabSelector(el.id));
+    el.addEventListener('click', (ev) => router(el.id.replace('-tab', '')));
   });
 };
 

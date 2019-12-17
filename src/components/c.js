@@ -1,9 +1,7 @@
 import header from './header';
-import main from './main';
 import footer from './footer';
+import home from './home';
 import menu from './menu';
 import contact from './contact';
 
-export {
-  header, main, footer, menu, contact,
-};
+export { header, footer, home, menu, contact };

@@ -1,8 +1,7 @@
 import Banner from '../assets/mexican-food.jpg';
 
-const main = () => {
-  const el = document.createElement('main');
-  el.role = 'main';
+const home = () => {
+  const el = document.createElement('header');
   el.innerHTML = `
     <section class="jumbotron text-center">
       <div class="container">
@@ -16,4 +15,4 @@ const main = () => {
   return el;
 };
 
-export default main;
+export default home;

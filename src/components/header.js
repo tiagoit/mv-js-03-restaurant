@@ -19,11 +19,15 @@ const header = () => {
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+
+    <div class="navbar navbar-dark bg-dark shadow-sm mb-2">
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center">
           <strong>Restaurant Page</strong>
         </a>
+        <a href="#" class="btn btn-light my-2 tab-link" id="home-tab">Home</a>  
+        <a href="#" class="btn btn-light my-2 tab-link" id="menu-tab">Menu</a>
+        <a href="#" class="btn btn-light my-2 tab-link" id="contact-tab">Contact</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
