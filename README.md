@@ -16,3 +16,16 @@ HTML, SASS, Bootstrap, ES6, ESlint, Prettier, Stickler-ci, GitHub.
 
 - **Assignment page** - [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 - **Live** - [Demo on Heroku](#)
+
+### Install
+
+- Clone the app
+- `npm install`
+
+### Development server
+
+- `npm start`
+
+### Production build
+
+- `npm build`
