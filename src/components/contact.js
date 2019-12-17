@@ -1,10 +1,16 @@
 const contact = () => {
   const el = document.createElement('main');
   el.innerHTML = `
+    <div class="text-center mt-4">
+    <p>Amazing Mexican Inc</p>
+    <p>Rua da Orla - Nova Cabrália Bahia | Brazil</p>
+    <p>+55 73 98876 7662</p>
+    </div>
     <section class="form">
       <div class="container">
         <div class="row" id="contact">
           <div class="col">
+            <h3>Contact us</h3>
             <form>
               <div class="form-group">
                 <label for="email">Email address</label>
